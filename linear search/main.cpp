@@ -18,13 +18,11 @@ int main()
     cout << "Enter the element to be searched: ";
     cin >> p;
 
-    bool found = false; // Flag to indicate if the element is found
     for (int i = 0; i < n; i++)
     {
         if (p == a[i])
         {
             cout << "Number found at index " << i << ": " << p << endl;
-            found = true;
             break;
         }
     }
