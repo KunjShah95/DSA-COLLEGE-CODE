@@ -25,7 +25,7 @@ int main()
         {
             cout << "Number found:  " << p << endl;
             return start;
-=======
+
             cout << "Number found at index " << i << ": " << p << endl;
             break;
         }
