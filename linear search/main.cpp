@@ -23,12 +23,10 @@ int main()
     {
         if (p == a[i])
         {
-<<<<<<< HEAD
             cout << "Number found:  " << p << endl;
             return start;
 =======
             cout << "Number found at index " << i << ": " << p << endl;
->>>>>>> 58175d6e46e2f4a0bbc3b5005298b24ff5a63857
             break;
         }
         else
