@@ -26,6 +26,11 @@ int main()
             cout << "Number found:  " << p << endl;
             cout << "Number found at index " << i << ": " << p << endl;
             return 0;
+
+            return start;
+
+            cout << "Number found at index " << i << ": " << p << endl;
+            break;
         }
         else
         {
