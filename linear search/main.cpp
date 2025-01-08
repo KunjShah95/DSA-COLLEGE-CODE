@@ -13,26 +13,24 @@ int main()
     {
         cin >> a[i];
     }
-
+    int start = 0;
+    int end = n - 1;
     int p;
     cout << "Enter the element to be searched: ";
     cin >> p;
 
-    bool found = false; // Flag to indicate if the element is found
     for (int i = 0; i < n; i++)
     {
         if (p == a[i])
         {
-            cout << "Number found at index " << i << ": " << p << endl;
-            found = true;
+            cout << "Number found:  " << p << endl;
+            return start;
             break;
         }
+        else
+        {
+            start++;
+        }
     }
-
-    if (!found)
-    {
-        cout << "Number not found in the array." << endl;
-    }
-
     return 0;
 }

@@ -11,21 +11,17 @@ int main()
     {
         cin >> a[i];
     }
-    for (int k = 0; k < n; k++)
+    for (int i = 0; i < n - 1; i++)
     {
-        int flag = 0;
-        for (int i = 0; i < n - k - 1; i++)
+        int min = i;
+        for (int j = i + 1; j < n; j++)
         {
-            if (a[i] > a[i + 1])
+            if (a[j] < a[min])
             {
-                swap(a[i], a[i + 1]);
-                flag = 1;
+                min = j;
             }
         }
-        if (flag == 0)
-        {
-            break;
-        }
+        swap(a[i], a[min]);
     }
     cout << "The sorted array is: ";
     for (int i = 0; i < n; i++)

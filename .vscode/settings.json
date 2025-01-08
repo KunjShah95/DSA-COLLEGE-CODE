@@ -1,3 +1,8 @@
 {
-  "editor.acceptSuggestionOnEnter": "on"
+  "editor.acceptSuggestionOnEnter": "on",
+  "files.associations": {
+    "*.ndjson": "jsonl",
+    "*.dbclient-js": "javascript",
+    "utility": "cpp"
+  }
 }
