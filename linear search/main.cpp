@@ -1,42 +1,32 @@
 #include <iostream>
 using namespace std;
-
 int main()
 {
-    int a[100]; // assuming a maximum size of 100
+    int a[100];
     int n;
-    cout << "Enter the size of the array: ";
+    cout << "Enter the size of the array:";
     cin >> n;
-
-    cout << "Enter the elements of the array: ";
+    cout << "Enter the elements of the array:";
     for (int i = 0; i < n; i++)
     {
         cin >> a[i];
     }
-    int start = 0;
-    int end = n - 1;
+    int start = 0, end = n - 1;
     int p;
-    cout << "Enter the element to be searched: ";
+    cout << "Enter the element to be searched:" << endl;
     cin >> p;
-
     for (int i = 0; i < n; i++)
     {
-        if (p == a[i])
+        if (a[i] == p)
         {
-            cout << "Number found:  " << p << endl;
-            cout << "Number found at index " << i << ": " << p << endl;
-            return 0;
-
+            cout << "Number found : " << p << endl;
             return start;
-
-            cout << "Number found at index " << i << ": " << p << endl;
             break;
         }
         else
         {
-            start++;
+            start = start + 1;
         }
     }
-    cout << "Number not found: " << p << endl;
-    return -1;
+    return 0;
 }
