@@ -4,5 +4,6 @@
     "*.ndjson": "jsonl",
     "*.dbclient-js": "javascript",
     "utility": "cpp"
-  }
+  },
+  "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\gcc.exe"
 }
